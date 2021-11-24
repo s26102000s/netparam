@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<!-- Page title -->
+<section class="page-title-wrap position-relative bg-light">
+    <div id="particles_js"></div>
+    <div class="container pt-7">
+        <div class="row">
+            <div class="col-11">
+                <div class="page-title position-relative pt-5 pb-5">
+                    <ul class="custom-breadcrumb roboto list-unstyled mb-0 clearfix" data-animate="fadeInUp" data-delay=".8">
+                        <li><a href="{% url 'website:home' %}">Home</a></li>
+                        <li><i class="lnr lnr-chevron-right"></i></li>
+                        <li><a href="{% url 'website:about' %}">About us</a></li>
+                    </ul>
+                    <h1 data-animate="fadeInUp" data-delay="1.3">About Us</h1>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="world-map position-relative">
+                    <img src="{% static 'images/map.svg' %}" alt="" alt="" data-no-retina class="svg">>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Banner -->
+
+<!-- About us -->
+<section style="padding-top:20px;">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="about-us-title text-center">
+                    <h2 data-animate="fadeInUp" data-delay=".1">Welcome to Netparam</h2>
+                    <p data-animate="fadeInUp" data-delay=".2">Innovation and proper aim are key factors in the growth of technology for any ICT solutions provider companies. Here at Netparam Technologies Private Limited encourage innovation throughout the organization and emphasizes strategic planning in starting and developing operations.
+                        We start with the data. We conduct independent research and draw on the latest technology to develop new insights and recommendations. Our rigorous analysis identifies risks, unveils opportunities, and informs smart strategies. We focus our efforts on influential and emerging economies where the future of sustainability will be determined.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="single-about-us-info feature-box f-boxed style-3" data-animate="fadeInUp" data-delay=".1">
+                    <h3>Who we are?</h3>
+                    <p>NTPL develops world class Websites, Android Apps, Iphone Apps, Cloud Based Application, Hybrid Mobile Apps & Big Data and Analysis. It works for the government and private projects and here the resources are placed from the top of the world.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-about-us-info feature-box f-boxed style-3" data-animate="fadeInUp" data-delay=".2">
+                    <h3>Our mission</h3>
+                    <p>To encourage innovation throughout the organization and emphasizes strategic planning in starting and developing operations.
+                    To identify risks unveils opportunities and informs smart strategies. 
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-about-us-info feature-box f-boxed style-3" data-animate="fadeInUp" data-delay=".3">
+                    <h3>Our vision</h3>
+                    <p>We envision to be a recognized platform to create a world where the actions of the government, business, and communities combine to eliminate chaotic ICT solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of About us -->
+<hr>
+<!-- Our team -->
+<section class="pt-2 pb-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center pb-7">
+            <div class="col-xl-6 col-lg-8 col-md-10">
+                <div class="section-title text-center">
+                    <h2 data-animate="fadeInUp" data-delay=".1">Our Team</h2>
+                    <p data-animate="fadeInUp" data-delay=".2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Members -->
+        <div class="row">
+            {% for member in members %}
+            <div class="col-lg-4">
+                <div class="single-member" data-animate="fadeInUp" data-delay="1.5">
+                    <div class="image-hover-wrap">
+                        <img src="{{member.image.url}}" style="width:100%; height:auto;" alt="">
+                        <div class="image-hover-content d-flex justify-content-center align-items-center text-center">
+                            <ul class="list-inline">
+                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-member-info">
+                        <h4>{{member.name}}</h4>
+                        <span>{{member.designation}}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}            
+        </div>
+    </div>
+</section>
+<!-- End of Our team -->
+<hr>
+<section class="pt-2 pb-5 bg-light">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<form action="" method="Post">
+{% csrf_token %}
+<lable for="name">Name</lable>
+{{contacts.name}}
+<lable for="email">Email</lable>
+{{contacts.email}}
+<lable for="subjact">Subject</lable>
+{{contacts.subjact}}
+<lable for="message">Message</lable>
+{{contacts.message}}
+<br>
+<ul style="list-style-type: none;float:right;"><li>
+<button type="submit" class="btn btn-default">Send</button>
+</li></ul>
+
+</form>
+</div>
+<div class="col-1"></div>
+<div class="col-md-5">
+      <img src="{% static 'images/strategy.jpg' %}" style="height:300px"alt="...">
+
+</div> 
+</div>
+</div>
+</section>
+
+{% endblock %}

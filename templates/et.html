@@ -1,0 +1,320 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<section class="blog pt-7 pb-5">
+<div class="container">
+<div class="row">
+    <div class="col-md-3">
+        <div class="sidebar">
+            <div class="sidebar-box">
+                <div class="sidebar-title">
+                    <h3>Quick Link</h3>
+                </div>
+                <div class="sidebar-content">
+                    <ul>                        
+                        <li id="li_1"><a href="#" onclick="ShowHidePanel('1'); return false;">Courses</a></li>
+                        <li id="li_2"><a href="#" onclick="ShowHidePanel('2'); return false;">Admission</a></li>
+                        <li id="li_3"><a href="#" onclick="ShowHidePanel('3'); return false;">Placements</a></li>
+                        <li id="li_4"><a href="#" onclick="ShowHidePanel('4'); return false;">Campus Life</a></li>                                                        
+                     </ul>                                                 
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="col-md-9 pull-right">                                                                       
+        <section id="div_1" class="events">
+            <div class="event-item mar-bottom-40">
+                <div class="event-content">
+                    <div class="event-detail pad-top-15">
+                        <div class="event-list sidebar-title">
+                            <h3 class=""><a>Education and Training</a></h3>	
+                        </div>
+                        <p>
+                            We impart education in diverse range of courses starting from digital literacy to Post 
+                            graduate diploma in advanced computing (PGDAC) with wide range of Summer Internship,  
+                            Certificate and Corporate courses in emerging technologies. We also offer various 
+                            capacity building programmes, skill development & vocational courses in Electrical, 
+                            Electronics, Finance domains. Many of these courses are sponsored by Bihar Skill 
+                            Development Mission and National Skill Development Corporation (NSDC) under Ministry of 
+                            Skill Development and Entrepreneurship. These learning programs create opportunities for 
+                            development of stakeholders to acquire, share, and apply global and local knowledge and 
+                            experiences. There are two ways of imparting education- one which is methodical and 
+                            conservative and the other which is flexible and trains itself through time. With a rich 
+                            experience of over a decade in this field, we have fine-tuned our education methodology 
+                            to cater to all kinds of entrants in the institute by making use of the best features from 
+                            both the aforementioned techniques. 
+                        </p> 
+                        <div class="row">
+                            <div class="col-sm thumbnail-images pad-top-10">                                           
+                                <img src="{% static 'images/et1.jpg' %}" class="img-responsive" alt="1">                                                
+                            </div>                             
+                            <div class="col sm thumbnail-images pad-top-10">                                           
+                                <img src="{% static 'images/et3.jpg' %}" class="img-responsive" alt="1">                                                
+                            </div> 
+                        </div>
+                                                    
+                    </div>
+                </div>
+            </div>
+
+        </section>
+            
+        <section id="div_2" class="events">
+            <div class="event-item mar-bottom-40">
+                <div class="event-content">
+                    <div class="event-detail pad-top-15">
+                        <div class="event-list sidebar-title">
+                            <h3 class=""><a>Admission</a></h3>	
+                        </div>
+                        <p>
+                            Our Institute offers several courses starting from Digital Literacy to 
+                            Post Graduate Diploma in Advanced Computing. Admissions to all PG Diploma 
+                            courses of C-DAC are done through C-DAC's computerized Common Admission 
+                            Test (C-CAT). Every year, C-CAT is usually conducted in June (for August 
+                            admissions) and December (for February admissions).
+                        </p>
+
+                        <h5 class="mar-top-15">How to register for C-CAT</h5>
+                        <p>
+                            Admissions to all PG Diploma courses of C-DAC are done through C-DAC's computerized 
+                            Common Admission Test (C-CAT). Every year, C-CAT is usually conducted in June 
+                            (for August admissions) and December (for February admissions).
+                        </p>
+
+                        <h5 class="mar-top-15">Registration for sponsored courses</h5>
+                        <p>
+                            Admissions in all sponsored courses are done through C-DAC entrance test based on the 
+                            eligibility, domicile and financial guideline defined by C-DAC and advertisement published 
+                            in local news dailies. Monthly stipend is applicable in few of the courses as per sponsoring 
+                            department guidelines. C-DAC's computerized Common Admission Test is organized locally in 
+                            frequent interval for admissions.
+                        </p>
+
+                        <h5 class="mar-top-15">How to register for Campus Connect Program</h5>
+                        <p>
+                            Admissions in Campus Connect Programme (Summer/Winter Internships) are generally taken 
+                            directly on the recommendation of the college/institution as per the AICTE norms and guidelines. 
+                            Referral letter in some cased are issued by the esteemed institution defining the tentative 
+                            time schedule.
+                        </p>
+
+                        <h5 class="mar-top-15">Admission in regular Language/AWT Courses</h5>
+                        <p>
+                            Admissions in capacity building, retail, language, advance technologies 
+                            courses are taken directly thr’u a standard admission process. Candidate should 
+                            register themselves on the institute website with the prerequisites and 
+                            applicant aspiration. Link : 
+                            <a href="https://astric.net/Forms/frmEnquiry.aspx">https://astric.net/Forms/frmEnquiry.aspx</a>
+                        </p>
+
+                        <h5 class="mar-top-15">Admission in regular Retail and Skilling trainings</h5>
+                        <p>
+                            Kushal Yuva Programme admission is done regularly but the student has to 
+                            register online and get the document verification done at District 
+                            Registration and Counselling Centre as per Bihar Skill Development 
+                            Mission guidelines. AADHAR Card and Latest Education Qualification 
+                            Certificate, Bank Details is required for registration. Admission in 
+                            Pradhan Mantri Kaushal Vikas Yojna (PMKVY) is done online and directly 
+                            at the Skilling Centre with AADHAR Card and Latest Education Qualification 
+                            Certificate, Bank Details. Link :
+                            <a href="https://astric.net/Forms/frmEnquiry.aspx">https://astric.net/Forms/frmEnquiry.aspx</a>
+                        </p>
+
+                        <h5 class="mar-top-15">General instructions and conditions :</h5>  
+                        <p><i class="fa fa-angle-double-right"></i> Candidate is required to select any one couse while filling in the application form.</p>
+                        <p><i class="fa fa-angle-double-right"></i> Providing incorrect / false information will lead to cancellation of candidature.</p>
+                        <p><i class="fa fa-angle-double-right"></i> The Admission process may include written test or personal interview.</p>
+                       
+                      
+                        <p class="mar-top-15">** Registering at the web site does not entitle you to the right of 
+                            admission / selection for any course. Link 
+                            <a href = "https://astric.net/Forms/frmEnquiry.aspx"> https://astric.net/Forms/frmEnquiry.aspx </a> 
+
+                        </p>
+                        <p class="mar-top-15">** For C-DAC courses apply online at <a href = "https://www.cdac.in/index.aspx?id=acts">https://www.cdac.in/index.aspx?id=acts</a> and appear in entrance exam conducted by C-DAC.</p> 
+                                                    
+                    </div>
+                </div>
+            </div>
+
+        </section>
+           
+        <section id="div_3" class="events">
+            <div class="event-item mar-bottom-40">
+                <div class="event-content">
+                    <div class="event-detail pad-top-15">
+                        <div class="event-list sidebar-title">
+                            <h3 class=""><a>Placements</a></h3>	
+                        </div>
+                        <p>As placement plays on important meeting the career aspirations of each student 
+                            enrolled in the skill development program and we work on its process form the 
+                            day when we done mobilization and this process continue goes till tracking of 
+                            student Astric Computers India Pvt. Ltd. (ACIPL) placement afford responsible 
+                            for tracking of each student who successfully placed.
+                        </p>
+                        <p class="mar-top-15">Following is the process and methodology of process of staying in touch with 
+                            placed candidates and obtaining their feedback and pain areas, parameters on 
+                            which report will be obtained, schedule.  
+                        </p>
+                        <p class="mar-top-15">Our placement team contacts with each placed student every month, and Discusses 
+                            with him/her about job who have develop experience which they are gaining.
+                        </p>
+                        <p class="mar-top-15">If any student not happy with Job and want to move placement team support them 
+                            to move in another job as well we talk to help of other HR department to solve 
+                            students Issues.
+                        </p>
+                        <p class="mar-top-15">Placement Tracking Process which we follow and ACIPL is as follow :</p>
+                        <p class="mar-top-15">
+                            <ul>
+                                <li><i class="fa fa-arrow-circle-o-right text-info"></i><strong>Monthly Calling : 
+                                    </strong> Frist week of every month after placement team will call 
+                                    to each placed student to get their feedback.</li>
+                                <li><i class="fa fa-arrow-circle-o-right text-info"></i><strong>Connect with HR : 
+                                    </strong> As per calling a report if any student having any issue then our 
+                                    placement team member connect with concern HR and try to resolve 
+                                    issues, such type of helps motivate our student and try to feel them 
+                                    that ASTIC Computers (I) is supporting after training and placement.</li>
+                                <li><i class="fa fa-arrow-circle-o-right text-info"></i><strong>Collection of Documents : 
+                                    </strong>We ask to student to share their documents like Offer Letters/salary Slips etc., 
+                                    such document help us motivate other students.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <span class="ttm-meta-line byline">
+                                <i class="fa fa-envelope text-info"></i> training@astric.in  
+                            </span>
+                            <span class="ttm-meta-line byline">
+                                <i class="fa fa-mobile text-info"></i> +91 612 2597031
+                            </span>
+                        </p>                  
+                    </div>
+                </div>
+            </div>
+
+        </section>
+            
+        <section id="div_4" class="events">
+            <div class="event-item mar-bottom-40">
+                <div class="event-content">
+                    <div class="event-detail pad-top-15">
+                        <div class="event-list sidebar-title">
+                            <h3 class=""><a>Campus Life</a></h3>	
+                        </div>
+                        <h5>Learnings</h5>   
+                        <p>
+                            There are two ways of imparting education- one which is methodical and conservative and the other 
+                            which is flexible and trains itself through time. With a rich experience of over a decade in this 
+                            field, we have fine-tuned our education methodology to cater to all kinds of entrants in the institute 
+                            by making use of the best features from both the aforementioned techniques. Teaching methodology at 
+                            Astric Solutions dwells upon providing conceptual skills, diffused with theoretical background and 
+                            practical skills leading to perfect implementation in real life situations. Qualified & experienced 
+                            staff along with a healthy student - teacher relationship goes a long way in inculcating the desire 
+                            to learn more and more within the students. Through the curriculum, we have a balanced mixture of 
+                            lecture, practical, tutorial & assignments and at the end a real life project design. As & when 
+                            required a panel of visiting faculty provide their expert guidance on specialized & industry-oriented 
+                            subjects.
+                        </p>
+
+                        <h5 class="mar-top-15">Lectures</h5>   
+                        <p>
+                        Being the tried-and-tested mode of instruction, a strong emphasis is given in the lectures for the 
+                        in-depth coverage of entire syllabus by taking care of the different analytical-abilities of the 
+                        students. Lectures are so designed and delivered that the students understand the practical 
+                        implementation of a technology and its applications across industry. Thus Astric Solution grooms 
+                        individuals with strong conceptual knowledge, and the right kind of attitude that helps the Astric 
+                        Solution students to stand tall in the job market.
+                        </p>
+
+                        <h5 class="mar-top-15">Practical</h5>   
+                        <p>
+                        Practical implementation of the theoretical knowledge is of utmost importance, especially in the IT 
+                        industry. With specialized infrastructure and competent faculty, we help to build intelligent 
+                        software engineers out of students who can understand the concept in an effective and efficient 
+                        manner by practically exploring the system. Expert lab faculties are there to assist them with well 
+                        structured assignments to canalize the practical and seminars are conducted to enhance their 
+                        knowledge about the system.
+                        </p>
+
+                        <h5 class="mar-top-15">Tutorial</h5>   
+                        <p>
+                        Tutorials are conducted to help the students deal with final details of topics & to prepare the student 
+                        gradually to handle the problems at examination levels.
+                        </p>
+
+                        <h5 class="mar-top-15">Project</h5>   
+                        <p>
+                        After going through the entire syllabus the students are assigned with one or two projects where they 
+                        can build up their skills in one particular application & put their knowledge to test. This prepares 
+                        the students to handle real life situation, and at the same time, caters to their needs & thus 
+                        sharpen their skill at S/W development. Every student has to develop his/her project separately, 
+                        which is a part of the syllabus and after completing the project he/she will be eligible for his/her 
+                        respective certification.
+                        </p>
+
+                        <h5 class="mar-top-15">Presentation & Seminars</h5>   
+                        <p>
+                        To keep up with the latest trends of the industry, seminars & presentation are organized which enhances 
+                        both their knowledge & oratory skills. Regular presentations help them to become both knowledgeable 
+                        individuals and persuasive speakers.
+                        </p>
+
+                        <h5 class="mar-top-15">Personality Development</h5>   
+                        <p>
+                        Students are encouraged actively to participate in extra curricular activity organized on Saturday to 
+                        enhance personality traits. Visiting faculty and member of leading organization are invited to express 
+                        their view and ideas about the present trends and how to achieve success and what should be taken care 
+                        during the tough time.
+                        </p>
+
+                        <h5 class="mar-top-15">Cultural Programs</h5>   
+                        <p>
+                        Cultural programs are designed to both educate and celebrate. The activities begin with celebration 
+                        featuring music, dance, food, games, and student organization booths. Providing the climactic finale 
+                        at the end of the week is Culture Night, the annual talent showcase featuring student, local, and 
+                        professional groups. Combining traditional and contemporary styles, the performances reflect the 
+                        changing face of our culture with ideas and thoughts of the students. These events would not be 
+                        possible without the hard work and dedication of the students and the faculty.
+                        </p>
+
+                        <h5 class="mar-top-15">Sports Activities</h5>   
+                        <p>
+                        To bring team sprite among the students, the institute also organize different indoor and outdoor games 
+                        like cricket, football, badminton, etc. both for girls and boys and winners are awarded to honour their 
+                        enthusiasm and winning attitude.
+                        </p>
+
+                        <h5 class="mar-top-15">Placement Assistance</h5>   
+                        <p>
+                        The placement cell keeps in touch with industry, alumni & students to place the right students at the 
+                        right place thus helping them guide through their career dreams. Institute has its own placement cell. 
+                        Pre-placement workshops are organized at the end of the session. The institute has its own strong 
+                        connections with prospective Employers as well as with placement consultants. We are in touch with 
+                        various placement consultants of Delhi, Kolkata, Bangalore and other cities.
+                        </p>
+
+                        <h5 class="mar-top-15">Quality Warrior of Astric Solution</h5>   
+                        <p>
+                        Faculty is the backbone of any educational institute. There are eminent experts in the field of 
+                        Information Technology and their efforts are supplemented by visiting faculties from leading 
+                        institutions. Find out the current list of Faculties through enclosed Faculty Profile. 
+                        </p> 
+                                                    
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+      </div>
+   </div>
+</div>
+</section>
+
+{% endblock %}

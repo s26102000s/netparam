@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<section style="background-color: #cba9df83">
+    <div class="position-relative pt-2">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-sm-6 col-sm-8">
+                    <!-- Section title -->
+                    <div class="section-header text-center">
+                        <h1 class="section-title wow fadeIn mb-2" data-animate="fadeInUp" data-delay=".12">{{course.name}} </h1>
+                        <h3 class="section-subtitle wow fadeIn mt-2">{{course.subtitle}}</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background-color:rgba(252, 250, 248, 0.5)">
+    <div class="container pt-2">
+        <div class="row align-items-center text-center pt-2">
+            <div class="col-sm-3"><img src="/static/images/course/MEAN1.png" alt="" class="fr-fic fr-dii"></div>
+            <div class="col-md-8 offset-1">
+                <h2 class="mb-2">Internship In Mean Stack Development</h2>
+                <p class="text-justify">The MEAN STACK Internship will help you to get advanced knowledge about the MEAN STACK. The Developers of Netparam Technology  will Provide you complete knowledge of the subject and we also help the students to work on live projects to better understand how MEAN STACK work on real Time Scenario. Throughout this MEAN STACK Training, you will be working on real-life industry  Training in Web, Mobile, And desktop application.
+
+                </p>
+            </div>
+        </div>
+        <div class="row align-items-center pt-5">
+            <div class="col-md-7">
+                <div class="col-sm-12">        
+                    <h2 class="mb-2">About Mean STACK</h2>
+                    <p class="text-justify">The term MEAN Stack refers to a collection of JavaScript-based technologies used to develop web applications. MEAN is an acronym that stands for MongoDB, ExpressJS, Angular, and Node.js. The MEAN Stack enables you to use JavaScript on both, front- and back-end.
+                    </p>
+                    <p class="text-justify">
+                        There are four main building blocks of every full-stack MEAN application:</p>
+                    <ul>
+                        <li>MongoDB: a schema-less (document-oriented) NoSQL database</li>
+                        <li>Express.js: a server-side JavaScript framework running on top of Node.js</li>
+                        <li>Angular: a browser-independent MVC JavaScript UI framework</li>
+                        <li>Node.js: a server-side JavaScript run-time based upon Google’s V8 JavaScript engine</li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+            <div class="col-sm-4 offset-1"><img src="/static/images/course/bigdata1.gif" alt="" class="fr-fic fr-dii"></div>
+        </div>
+        <div class="row align-items-center text-center">
+            <div class="col-sm-4"><img src="/static/images/course/ds2.gif" alt="" class="fr-fic fr-dii"></div>
+            <div class="col-md-7 offset-1">
+                <div class="col-sm-12">
+        
+                    <h2 class="mb-2">Why Should You Take MEAN STACK Course?</h2>
+                    <ul class="text-justify">
+                        <li>ISOMORPHIC JavaScript</li>
+                        <li>Multiple Platform Capabilities</li>
+                        <li>One Language Development Journey(JS)</li>
+                        <li>Stable And Constant functionality with growing traffic</li>
+                        <li>Offer a wide range of features</li>
+                        <li>Ability to load & manage unstructured data</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center pt-5">
+            <div class="col-md-7">
+                <div class="col-sm-12">        
+                    <h2 class="mb-2">MEAN STACK Jobs</h2>
+                    <p class="text-justify">Full-stack development is the development of both the front end and back end portions of an application. Front end development deals with what the user sees and interacts with. The back end deals with the database, network security, configuration, etc.
+                    </p>
+                    <p class="text-justify">
+                        A MEAN stack developer has the knowledge and skill to contribute to the work of the entire web development cycle, both the user as well as server-side. He designs the user interface using markup languages, develops the server-side script, and integrates them to come up with a functional and responsive web application. He takes care that the app is optimized for performance and speed. He is even responsible for troubleshooting and fixing any bugs that may occur.
+                    </p>
+                    <p class="text-justify">
+                        According to a survey conducted by Indeed, the average salary for Full Stack Developer in India is approx. 4.25 lakhs per annum. These estimates are based on the figures submitted by full-stack developer employees in the past 3 years. The average salary for a Full Stack Web Developer is approx $10,488 in the United States.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+            <div class="col-sm-4 offset-1"><img src="/static/images/course/cs3.gif" alt="" class="fr-fic fr-dii"></div>
+        </div>
+        <div class="row text-center pb-5">
+            <div class="col-md-12">
+        
+                <h2 class="mb-3 text-center">Why Us?</h2>
+        
+                <p class="text-justify">At <strong>Netparam Technologies</strong>, the Internship is designed to make you a certified MEAN STACK practitioner by providing you rich hands-on training on MEAN STACK Ecosystem. This MEAN STACK developer certification training is a stepping stone to your MEAN STACK journey and you will get the opportunity to work on various MEAN STACK projects.</p>
+            </div>
+        </div>
+        
+        <div class="row pb-2">
+            <div class="col-sm-6">
+                <a href="{{ course.syllabus.url }}" class="btn btn-primary mt-2">Download Syllabus</a>
+            </div>
+        </div>
+        
+    </div>       
+</section>
+
+{% endblock %}

@@ -1,0 +1,274 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+	
+</style>
+
+<section class="blog">
+   <div class="container">
+       <div class="row">
+
+           <div class="col-md-3">
+               <div class="sidebar">
+                   <div class="sidebar-box">
+                        <div class="sidebar-title">
+                            <h3>Quick Link</h3>
+                        </div>
+                        <div class="sidebar-content">
+                            <ul>
+                               <li id="li_2"><a href="#" onclick="ShowHidePanel('2'); return false;">IT Sales & Service</a></li>
+                               <li id="li_3"><a href="#" onclick="ShowHidePanel('3'); return false;">Skill Development</a></li>                                    
+                               <li id="li_5"><a href="#" onclick="ShowHidePanel('5'); return false;">Consultancy</a></li>
+                               <li id="li_4"><a href="#" onclick="ShowHidePanel('4'); return false;">Incubation</a></li>                                                                               
+                            </ul>                                                        
+                        </div>                       
+                     </div>
+                  </div>
+               </div>
+            <div class="col-md-9 pull-right">                                                                       
+               <section id="div_1" class="events">
+                   <div class="event-item mar-bottom-40">
+                       <div class="event-content">
+                           <div class="event-detail pad-top-15">
+                               <div class="event-list sidebar-title">
+                                   <h3 class=""><a>Retail & Services</a></h3>	
+                               </div>
+                               <p>
+                                   Our retail outlets offer a choice for wide range of Laptops, Desktops, Computing, 
+                                   Imaging and Printing Devices, Tabs, Printers, Plotters, Scanners, Software, Networking 
+                                   & Security Devices, Consumables etc. to name a few. We are Authorized Partner cum Service 
+                                   Centre of Hewlett Packard (HP), TVSE Electronics Limited, Epson, Sony, Microsoft, Intel, 
+                                   AMD, D-Link and N-Computing to support the emerging needs of our valuable customer at 
+                                   the doorstep. We are working in tandem with Digital India Mission, Digitization for 
+                                   permeation of IT & E-Governance Projects in Bihar. We have the distinction of starting 
+                                   the first Multi branded IT Superstore to deliver quality range of products and services 
+                                   by creating e-Malls and retail chain of IT stores. Services and Support has been our core 
+                                   strength over the last two and half decades and we have been able to achieve excellence 
+                                   and Customer Delight year after year.   
+                               </p> 
+                                                          
+                           </div>
+                       </div>
+                   </div>
+
+               </section>
+                   
+               <section id="div_2" class="events">
+                   <div class="event-item mar-bottom-40">
+                       <div class="event-content">
+                           <div class="event-detail pad-top-15">
+                               <div class="event-list sidebar-title">
+                                   <h3 class=""><a>IT Sales & Service</a></h3>	
+                               </div>
+                               <div class="product-image">
+                                   <img src="{% static 'images/about/hp.png' %}" alt="image">
+                               </div>
+                               <p>
+                                   We are associated with the global ICT giant with over 20 years as authorized 
+                                   Sales & Service Provider for HP Commercial Desktop PCs, HP Notebook PCs, 
+                                   Tablets, Compaq Home Desktop PCs, Printers & Multifunction products. We are 
+                                   also working closely with HP India under their Digital India Mission, 
+                                   Digitization for permeation of IT & E-Governance Projects.
+                               </p>
+                               <p class="text-info mar-top-10"> 
+                                   Click Here For Partner Details <i class="fas fa-arrow-right"></i> 
+                                   <a class="text-danger" href="http://www8.hp.com/in/en/home.html" target="_blank">
+                                   www.hp.com/in/</a>
+                               </p>   
+                               
+                               <hr style="color:#d9dadc; border:dashed 1px" />     
+                               <div class="product-image">
+                                   <img src="images/about/epson.png" alt="image">
+                               </div>                                                                        
+                               <p>
+                                   We are the Authorized Service Centre in Jaipur with a support network at Pune, Noida and Mumbai for Epson Inkjet, Ink Tank System, Scanners, Large Format Printers, Point of Sale Printers, Projectors, Dot Matrix Printers, etc.
+                               </p>
+                               <p class="text-info"> 
+                                   Click Here For Partner Details <i class="fa fa-arrow-right"></i> 
+                                   <a class="text-danger" href="http://www.epson.co.in" target="_blank">
+                                       www.epson.co.in</a>
+                               </p>
+                               <hr style="color:#d9dadc; border:dashed 1px" />  
+
+                               <div class="product-image">
+                                   <img src="images/about/microsoft.png" alt="image">
+                               </div>                                                                          
+                               <p>
+                                   We have been the distinction of encouraging and promoting over 1500 government approved Kushal Yuva Kendra for 
+                                   100% licensing which has been a success story across India. We provide range of 
+                                   Microsoft licenses and cloud solutions to various Government departments, co-operates 
+                                   and valuable Customer.
+                               </p>
+                               <p class="text-info"> 
+                                   Click Here For Partner Details <i class="fa fa-arrow-right"></i> 
+                                   <a class="text-danger" href="https://www.microsoft.com/en-in" target="_blank">
+                                       https://www.microsoft.com</a>
+                               </p>
+                               <hr style="color:#d9dadc; border:dashed 1px" />  
+
+                               <div class="product-image">
+                                   <img src="images/about/sony.png" alt="image">
+                               </div>                                                                          
+                               <p>
+                                   We have the distinction of starting the first Multi branded IT Superstore to deliver quality range of products and services by creating e-Malls and retail chain of IT stores in different part of our state. Today, IT Zone is converted into the prestigious “Sony Centre” which offers entire range of Sony LED, Audio, Video, Camera, Mobile, Imaging, Storage products and accessories under a single umbrella.
+                               </p>
+                               <p class="text-info"> 
+                                   Click Here For Partner Details <i class="fa fa-arrow-right"></i>
+                                   <a class="text-danger" href="htttp://www.sony.co.in" target="_blank">
+                                       www.sony.co.in</a>
+                               </p> 
+                               <hr style="color:#d9dadc; border:dashed 1px" />  
+
+                               <div class="product-image">
+                                   <img src="images/about/tvs.png" alt="image">
+                               </div>                                                                           
+                               
+                               <p>
+                                   TVS Group, India’s foremost and well recognized self-owned Business Group and the first 
+                                   company in Asia to win the prestigious Deming Award for Quality. TVS Electronics (TVS-E), 
+                                   headquartered in Chennai, INDIA (BSE:532513, NSE:TVSELECT) was founded in 1986 as an IT 
+                                   Peripherals manufacturer and has today transformed into a leading Transaction Automation 
+                                   IT Products & Solution Provider. 
+                               </p>
+                               <p class="text-info"> 
+                                   Click Here For Partner Details <i class="fa fa-arrow-right"></i> 
+                                   <a class="text-danger" href="http://www.tvs-e.in/heritage.php" target="_blank">
+                                       http://www.tvs-e.in</a>
+                               </p> 
+                               <hr style="color:#d9dadc; border:dashed 1px" />  
+
+                               <div class="product-image">
+                                   <img src="images/about/intel.png" alt="image">
+                               </div>                                                                        
+                               <p>
+                                   Intel is the world's largest and highest valued 
+                                   semiconductor chip maker, based on revenue. It is the inventor of the x86 series 
+                                   of microprocessors, the processors found in most personal computers. Intel Corporation, 
+                                   founded on July 18, 1968, is a portmanteau of Integrated Electronics 
+                                   (the fact that "intel" is the term for intelligence information was also quite suitable).
+                                   Intel also makes motherboard chipsets, network interface controllers and integrated 
+                                   circuits, flash memory, graphic chips, embedded processors and other devices related to 
+                                   communications and computing.
+                               </p>
+                               <p class="text-info"> 
+                                   Click Here For Partner Details <i class="fa fa-arrow-right"></i> 
+                                   <a class="text-danger" href="https://www.intel.in" target="_blank">
+                                       https://www.intel.in</a>
+                               </p>             
+                           </div>
+                       </div>
+                   </div>
+
+               </section>
+                  
+               <section id="div_3" class="events">
+                   <div class="event-item mar-bottom-40">
+                       <div class="event-content">
+                           <div class="event-detail pad-top-15">
+                               <div class="event-list sidebar-title">
+                                   <h3 class=""><a>Skill Development</a></h3>	
+                               </div>
+                               
+                               <p class="mar-top-10">
+                                   These Centres are imparting training in different domains of IT, Electronics, Finance 
+                                   and Skill Development. This fashions the involvement of entrepreneurs in honing 
+                                   the employability skills of the youth of Bihar, e-learning, capacity building of 
+                                   government employees, empowerment of women and under privileged masses. Our team 
+                                   is also working continuously to expand the network to optimise the outreach.
+                               </p>                               
+                           </div>
+                       </div>
+                   </div>
+
+               </section>
+                   
+               <section id="div_4" class="events">
+                   <div class="event-item mar-bottom-40">
+                       <div class="event-content">
+                           <div class="event-detail pad-top-15">
+                               <div class="event-list sidebar-title">
+                                   <h3 class=""><a>Incubation</a></h3>	
+                               </div>
+                               <p>
+                                   We have facility for start-up companies to jump start their business 
+                                   venture. So far we have successfully incubated many ICT and 
+                                   Skill Development companies like TCS-iON, CSM Technologies, Navkar Centre 
+                                   for Skills, Nevaeh Technologies, Laurus Edutech. These companies are now 
+                                   operating in Bihar and developed many folds offering enormous employment 
+                                   and giving impetus to new upcoming startup ventures and entrepreneurs. 
+                                   Netparam’s innovative bent of mind has been towards “Inclusive Growth” and 
+                                   to cater to the growing need of building upon the huge pool of human 
+                                   resources in Bihar. The space being provided has high bandwidth internet 
+                                   connectivity along with bio-metric system, Video Surveillance, separate 
+                                   pantry and centrally air-conditioning with ample space for parking of 2 
+                                   and 4 wheelers apart from common area for men and women, power back up 
+                                   facilities and close to Bailey Road, Hotels, Restaurants, Hospital, 
+                                   Railway Station and Airport.  
+                               </p>                                                                                                    
+                           </div>                           
+                       </div>
+                   </div>
+
+               </section>
+                   
+               <section id="div_5" class="events">
+                   <div class="event-item mar-bottom-40">
+                       <div class="event-content">
+                           <div class="event-detail pad-top-15">
+                               <div class="event-list sidebar-title">
+                                   <h3 class=""><a>Consultancy</a></h3>	
+                               </div> 
+                               <p>
+                                   The e-governance initiatives taken by the government in recent years have posed a 
+                                   tremendous challenge to create the pool of skilled manpower resources at various 
+                                   levels. The need of the hour is to create ICT enabled eco-systems and a bank of 
+                                   talented and employment ready work force. We also have a broad spectrum of 
+                                   activities relating to ICT services, online exam solutions, incubation center for 
+                                   business startups. It is a sincere effort to lay the foundation and foster seamless 
+                                   flow of IT enabled services. Moreover we also keep our social responsibility close 
+                                   in loop of our activities.  
+                               </P>    
+                               <p class="mar-top-10">
+                                   We are working closely with Government departments, academia, and 
+                                   industry under various digitization and E-Governance Projects. There 
+                                   is a dire need of Industrial collaboration and creating an ecosystem 
+                                   in this regard. We are creating a robust platform to establish an 
+                                   interface between Academia Industries. The objective is to enable 
+                                   seamless flow of IT enabled services with limitless scope of solution 
+                                   to break any barrier, which draws a line in between technologies. We 
+                                   are working relentlessly for  collaboration in  green innovations, 
+                                   digital solutions in a hub and spoke business model to promote inclusive 
+                                   developments and optimize the outreach. Our effort is to build capacity 
+                                   & support buddings entrepreneurs who are economical weaker, under 
+                                   privileged to help them eke out a livelihood with dignity.
+                               </p>                               
+                               <p class="mar-top-10">
+                                   <i class="fa fa-arrow-circle-right text-primary"></i>
+                                       Capacity Building & Digital Literacy
+                                   <br />                                        
+                                   <i class="fa fa-arrow-circle-right text-primary"></i>
+                                       Skill Development & Vocational Courses                                            
+                                   <br />                                        
+                                   <i class="fa fa-arrow-circle-right text-primary"></i>
+                                       Campus Solutions & Examinations Management
+                               </p>                                    
+                                                           
+                           </div>
+                       </div>
+                   </div>
+
+               </section>  
+           </div>
+                           
+       </div>
+   </div>
+</section>
+
+
+
+<script>
+ 
+</script>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="section">
+    <div class="container">
+      <div class="section-header">          
+        <h1 class="section-title wow fadeIn mb-2" data-wow-duration="1000ms" data-wow-delay="0.3s"><span>{{service.name}}</span></h1>
+        <p class="section-subtitle wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0.35s">{{service.subtitle}}</p>
+        <hr class="lines wow zoomIn" data-wow-delay="0.4s">
+        
+      </div>
+    </div>
+    <div class="row align-items-center text-center">
+            
+        <div class="col-sm-4 offset-1">
+            <img src="{{service.image.url}}" alt="">
+        </div>
+        <div class="col-md-6 m-3">
+            <div class="col-sm-12">
+                <h2 class="mb-2">{{service.name}}</h2>
+                <p class="text-justify">{{service.description}}</p>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- content close -->
+
+
+{% endblock %}

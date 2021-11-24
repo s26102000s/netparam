@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="section" style="background-color:bisque">
+    <div class="container mb-5">
+      <div class="section-header">          
+        <h2 class="section-title wow fadeIn mb-2" data-wow-duration="1000ms" data-wow-delay="0.3s">Our <span>Services</span></h2>
+        <p class="section-subtitle wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0.35s">Be Digital ready with our Fast and Cost-effective Services</p>
+        <hr class="lines wow zoomIn" data-wow-delay="0.4s">
+        
+      </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            {% for service in services %}
+            <div class="col-lg-4">                
+                <div class="col-lg-12 feature-box style-3 f-boxed shadow-right text-center">
+                    <a href="{% url 'website:ServiceDetail' service.id %}">
+                        <h4>{{service.name}}</h4>
+                    </a>
+                    <hr>
+                    <p class="text-justify">{{service.subtitle}}</p>
+                </div>                
+            </div>       
+            {% endfor %}     
+        <div>
+    </div>	
+</section>
+
+
+{% endblock %}

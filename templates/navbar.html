@@ -1,0 +1,54 @@
+  {% load static %}
+  <!-- Navbar STart -->
+  <header id="topnav" class="scroll sticky">            
+   <nav class="navbar navbar-expand-lg nav">
+     <div class="container-fluid display-flex">
+       <!-- Logo container-->
+       <div class="col-md-12 display-flex">
+           <a class="logo" href="{%url 'website:home'%}">
+               <img src="{% static 'images/logo.svg' %}" alt="" >
+           </a> 
+      <ul class="navigation-menu" style="float:right;">
+      <li  style="margin-top:15px;">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navigation1"
+      aria-controls="navigation1"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      {% comment %} style="background:white;" {% endcomment %}
+      
+    >
+      <span style="color:white;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30 " fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+      </span>
+      </li>
+    </button>
+</ul>
+    <span id="navigation1" class="collapse navbar-collapse" style="float:right;margin-right:0px;">
+      {% comment %} <ul class="navbar-nav  ml-auto" id="myDIV" style="font-size: 20px; float:right;"> {% endcomment %}
+       <!-- End Logo container-->  
+       {% comment %} <div id="navigation"> {% endcomment %}
+           <!-- Navigation Menu-->   
+           <ul class="navigation-menu" style="float:right;">
+               <li  style="margin-top:7px;"><a href="{%url 'website:home'%}">Home</a></li>
+               <li  style="margin-top:7px;"><a href="{%url 'website:CoursePage'%}">Internship</a></li>
+               <li  style="margin-top:7px;"><a href="{%url 'website:ServicePage'%}">Online&nbspExaminations</a></li>
+               <li  style="margin-top:7px;"><a href="{%url 'website:ServicePage'%}">Services</a></li>
+               <li  style="margin-top:7px;"><a href="{%url 'website:about'%}">About us</a></span></li>                
+           </ul>
+           <!--end navigation menu-->              
+       </span><!--end navigation-->
+       </div>
+     </div><!--end container-->
+   </nav>
+
+   
+</header><!--end header-->
+<!-- Navbar End -->
+
+   

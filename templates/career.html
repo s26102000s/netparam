@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="p-3">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4">
+            <h4>Quick Link</h4>
+         </div>
+         <div class="col-md-8">
+            <div class="row">
+               <h4>Education and Training</h4>
+               <p>We impart education in diverse range of courses starting from digital literacy to Post graduate diploma in advanced computing (PGDAC) with wide range of Summer Internship, Certificate and Corporate courses in emerging technologies.
+                  We also offer various capacity building programmes, skill development & vocational courses in Electrical, Electronics, Finance domains. 
+                  Many of these courses are sponsored by Bihar Skill Development Mission and National Skill Development Corporation (NSDC) under Ministry of Skill Development and Entrepreneurship. 
+                  These learning programs create opportunities for development of stakeholders to acquire, share, and apply global and local knowledge and experiences. 
+                  There are two ways of imparting education- one which is methodical and conservative and the other which is flexible and trains itself through time. 
+                  With a rich experience of over a decade in this field, we have fine-tuned our education methodology to cater to all kinds of entrants in the institute by making use of the best features from both the aforementioned techniques.
+               </p>
+            </div>
+            <div class="row pb-3">
+               <div class="col-md-5">
+                  <img src="{% static 'images/et3.jpg' %}" style="aspect-ratio: 4/3; height:auto; width: 100%;" alt="...">
+               </div>
+               <div class="col-md-5 offset-1">
+                  <img src="{% static 'images/et2.jpg' %}" style="aspect-ratio: 4/3; height:auto; width: 100%;" alt="...">
+               </div>
+               
+            </div>
+         </div>
+      </div>
+      
+   </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<section style="background-color: #caacdd83">
+    <div class="position-relative pt-7">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-sm-6 col-sm-8">
+                    <!-- Section title -->
+                    <div class="section-header text-center">
+                        <h1 class="section-title wow fadeIn mb-2" data-animate="fadeInUp" data-delay=".12">{{course.name}} </h1>
+                        <h3 class="section-subtitle wow fadeIn mt-2">{{course.subtitle}}</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container pt-2">
+        {% autoescape off %}
+        {{course.description}}
+        {% endautoescape %}
+        
+    
+        <div class="row pb-7">
+            <div class="col-sm-6">
+                <a href="{{ course.syllabus.url }}" class="btn btn-outline-info mt-2">Download Syllabus</a>
+                <a href="#" class = "btn btn-outline-success ml-3" >Apply Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,361 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+<style>
+  
+</style>
+<link rel="stylesheet" href="{% static 'a/css/slick.css'%}">
+{% endblock %}
+{% block content %}
+<!-- slider -->
+
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/strategy.jpg' %}" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/et1.jpg' %}" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/et2.jpg' %}" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/et3.jpg' %}" alt="...">
+    </div>
+  </div>
+</div>
+
+<!-- slider end -->
+
+<!-- special section start -->
+{% comment %} 
+<section class="special-section p-7">
+  <div class="container">
+    <div class="row p-5">
+      <div class="col-md-4 col-sm-12 col-xs-12" style="padding-top: 20%;">
+        <div class="special-heading section-header h-70">
+          <h2 class="section-title wow fadeIn mb-2" data-wow-duration="1000ms" data-wow-delay="0.3s"><span>Our Services</span></h2>
+          
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0.35s">Be it digital design, product development, marketing collaterals/ strategy or content creation, we do it all.
+            <br> <br>
+            Click to know more about each.            
+            </p>
+        </div>
+        
+      </div>
+        <div class="col-md-4">
+          
+          <div class="card col-md-10 col-sm-4 col-xs-12 mb-3">
+            <div class="image-hover-wrap">
+              <img src="{% static 'images/e&t.png' %}" alt="Education-training">
+              <a href="{% url 'website:et' %}">
+              <div class="image-hover-content p-2">
+                <h3 class="text-white pt-2 pl-2 text-center">Education & Training</h3>
+                <p class="text-white text-justify">Admissions to all PG Diploma courses of C-DAC are done through C-DAC's computerized Common Admission Test.</p>
+                <i class="fas fa-arrow-circle-right text-white m-4"></i>
+                
+              </div>
+              </a>              
+            </div>
+            <h4 class="text-center mt-2">Education & Training</h4>
+          </div>
+          <div class="card col-md-10 col-sm-4 col-xs-12 mt-5">
+            <div class="image-hover-wrap">
+              <img src="{% static 'images/4.png' %}" alt="Education-training">
+              <a href="{% url 'website:es' %}">
+              <div class="image-hover-content p-2">
+                <h3 class="text-white pt-2 pl-2 text-center">Examination Solution</h3>
+                <p class="text-white text-justify">Admissions to all PG Diploma courses of C-DAC are done through C-DAC's computerized Common Admission Test.</p>
+                <i class="fas fa-arrow-circle-right text-white m-4"></i>
+              </div>
+              </a>              
+            </div>
+            <h4 class="text-center mt-2">Examination Solution</h4>        
+          </div>
+                   
+      </div>
+      <div class="col-md-4">
+        <div style="padding-top: 50%;">
+          <div class="card col-md-10 col-sm-4 col-xs-12">
+            <div class="image-hover-wrap">
+              <img src="{% static 'images/r&s.png' %}" alt="Education-training">
+              <a href="{% url 'website:rs' %}">
+              <div class="image-hover-content p-2">
+                <h3 class="text-white pt-2 pl-2 text-center">Retail & Services</h3>
+                <p class="text-white text-justify">Admissions to all PG Diploma courses of C-DAC are done through C-DAC's computerized Common Admission Test.</p>
+                <i class="fas fa-arrow-circle-right text-white m-4"></i>
+              </div>
+              </a>              
+            </div>   
+            <h4 class="text-center mt-2">Retail & Services</h4>       
+          </div>         
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- special section end --> {% endcomment %}
+
+<!-- technology Section Start -->
+<section id="technology" class="section">
+    <div class="container">
+      <div class="section-header">          
+        <h2 class="section-title wow fadeIn mb-2" data-wow-duration="1000ms" data-wow-delay="0.3s">Our <span>Tech Stack</span></h2>
+        <hr class="lines wow zoomIn" data-wow-delay="0.4s">
+        <p class="section-subtitle wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0.35s">Technology is moving faster than ever and to keep up with business and customer demands we make use of robust technologies such as Angular, Reactjs, Nodejs, and so on. Netparam's 250+ team of experts is comprised of top engineering, creative, management and analytical talent in the industry who have thorough expertise in a range of business domains.</p>
+        
+        
+      </div>
+      <div class="row pt-5">
+        <div class="item-boxes wow fadeInDown col-md-3 col-sm-6" data-wow-delay="0.2s">
+          
+            <div class="icon">
+              <i class="lnr lnr-laptop-phone"></i>
+            </div>
+            <h4>Web Design</h4>
+            <p class="text-justify">We create a custom made design for every client. There is no predefined universal design that fits all the requirements and websites.</p>
+          
+        </div>
+        <div class="item-boxes wow fadeInDown col-md-3 col-sm-6" data-wow-delay="0.4s">
+          
+            <div class="icon">
+              <i class="lnr lnr-tablet"></i>
+            </div>
+            <h4>Mobile App</h4>
+            <p class="text-justify">We develop App from phones to smart - TV and can already look back on many years of experience with many successful apps.</p>
+          
+        </div>
+        <div class="col-md-3 col-sm-6 item-boxes wow fadeInDown" data-wow-delay="0.6s">
+          
+            <div class="icon">
+              <i class="lnr lnr-chart-bars"></i>
+            </div>
+            <h4>Data Science</h4>
+            <p class="text-justify">We possess the expertise to provide powerful solutions with large Infrastructure to achieve Bigger Insights.</p>
+          
+        </div>
+        <div class="col-md-3 col-sm-6 item-boxes wow fadeInDown" data-wow-delay="0.8s">
+          
+            <div class="icon">
+              <i class="lnr lnr-pencil"></i>
+            </div>
+            <h4>UI Design</h4>
+            <p class="text-justify">Take your product to the next level with us. Solve real problems and improve your vital business metrics through beautiful interfaces and illustrations.</p>
+          
+        </div>
+        <div class="col-md-3 col-sm-6 item-boxes wow fadeInDown" data-wow-delay="1s">
+          
+            <div class="icon">
+              <i class="lnr lnr-layers"></i>
+            </div>
+            <h4>Internet of Things</h4>
+            <p class="text-justify">We provide full IoT application development and cover all aspect of an IoT architecture. We developed IoT-capable software starting from requirements engineering to the evolution.</p>
+          
+        </div>
+        <div class="col-md-3 col-sm-6 item-boxes wow fadeInDown" data-wow-delay="1.2s">
+          
+            <div class="icon">
+              <i class="lnr lnr-screen"></i>
+            </div>
+            <h4>Digital Marketing</h4>
+            <p class="text-justify">We create application to monitor, control and speedup the production and delivery of products and services.</p>
+          
+        </div>
+        <div class="col-md-3 col-sm-6 item-boxes wow fadeInDown" data-wow-delay="1.4s">
+          
+            <div class="icon">
+              <i class="lnr lnr-briefcase"></i>
+            </div>
+            <h4>Machine Learning Research</h4>
+            <p class="text-justify">Netparam Technologies can help you to transform and churn your Application idea into a successful business-oriented reality.</p>
+          
+        </div>
+        <div class="col-md-3 col-sm-6 item-boxes wow fadeInDown" data-wow-delay="1.6s">
+          
+            <div class="icon">
+              <i class="lnr lnr-cog"></i>
+            </div>
+            <h4>Testing Technologies</h4>
+            <p class="text-justify">We provide complete Selenium automation testing services, independent of the programming language and platforms.</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- technology Section End -->
+
+
+  <!--====== BRAND 2 PART START ======-->
+    
+    <div class="brand-2-area pb-120" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <marquee direction="right" behavior="scroll" scrollamount="20" onmouseover="this.stop();" onmouseout="this.start();" scrolldelay="100" truespeed="90">
+                    <div class="brand-active" style="display:flex">
+                        <div class="brand-item">
+                            <img src="{% static 'images/brand-item-1.png' %}" alt="brand name">
+                        </div>
+                        <div class="brand-item">
+                            <img src="{% static 'images/brand-item-2.png' %}" alt="brand name">
+                        </div>
+                        <div class="brand-item">
+                            <img src="{% static 'images/brand-item-3.png' %}" alt="brand name">
+                        </div>
+                        <div class="brand-item">
+                            <img src="{% static 'images/brand-item-4.png' %}" alt="brand name">
+                        </div>
+                    </div> <!-- brand item -->
+                </div>
+                    </marquee>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div>
+    
+    <!--====== BRAND 2 PART ENDS ======-->
+<script src="{% static 'a/js/jquery-1.12.4.min.js' %}"></script>
+<script src="{% static 'a/js/slick.min.js' %}"></script>
+<script src="{% static 'a/js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'a/js/main.js' %}"></script>
+
+
+    <!-- products -->
+<!-- <section class="section pt-2 pb-2">
+  <div class="container">
+    <div class="section-header pb-7 ">          
+      <h2 class="section-title wow fadeIn mb-2" data-wow-duration="1000ms" data-wow-delay="0.3s">Our <span>Products</span></h2>
+      <p class="section-subtitle wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0.3s">
+        Look at some of our recent work for clients worldwide. Your 'Idea' could be next
+      </p>
+      <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+    </div>
+  </div>
+  
+  <div class="row mb-3 mt-3">
+      <div class="col-md-6 item-boxes">
+        <div class="col-sm-10 ml-5">
+          <h1 class="mb-2">{{products.0.name}}</h1>
+          <p class="text-justify">{{products.0.description}}</p>
+        </div>
+      </div>
+      
+      <div class="col-md-5">
+        <div class="col-sm-10">
+          <img src="{{products.0.image.url}}" alt="">
+        </div>    
+      </div>  
+  </div>  
+  <div class="row mb-3 mt-3 pt-5">
+    <div class="col-md-5">
+      <div class="col-sm-10">
+        <img src="{{products.1.image.url}}" alt="">
+      </div>    
+    </div>  
+    <div class="col-md-6 item-boxes">
+      <div class="col-sm-10 ml-5">
+        <h1 class="mb-2">{{products.1.name}}</h1>
+        <p class="text-justify">{{products.1.description}}</p>
+      </div>
+    </div>    
+</div>  
+<div class="row mb-3 mt-3 pt-5">
+  <div class="col-md-6 item-boxes">
+    <div class="col-sm-10 ml-5">
+      <h1 class="mb-2">{{products.2.name}}</h1>
+      <p class="text-justify">{{products.2.description}}</p>
+    </div>
+  </div>
+  
+  <div class="col-md-5">
+    <div class="col-sm-10">
+      <img src="{{products.2.image.url}}" alt="">
+    </div>    
+  </div>  
+</div>   
+  
+</section>
+  -->
+
+<section id="client" class = "p-4">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+              <h4 class="title mb-4">Client Reviews</h4>
+              <p class="text-secondary para-desc mx-auto mb-0">Start working with <span class="text-primary font-weight-bold">Netparam</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+          </div>
+        </div><!--end col-->
+    </div><!--end row-->
+
+  <div class="row pb-5 carousel slide" data-ride="carousel">
+
+    <div class="col-lg-12">
+{% comment %} <div class="carousel-inner"> {% endcomment %}
+      {% comment %} {% for client in clients %} {% endcomment %}
+    {% comment %} {% if forloop.first %}
+        <div class="active carousel-item">
+    {% else %}
+        <div class="carousel-item">
+    {% endif %} {% endcomment %}
+        <div id="customer-testi" class="owl-carousel owl-theme brand-2-area">
+            <div class="media customer-testi m-2">              
+                <img src="{% static 'images/course/sf2.png' %}" class="avatar avatar-small mr-3 rounded shadow" alt="...">
+                <div class="media-body content p-3 shadow rounded bg-white position-relative">
+                    <ul class="list-unstyled mb-0">                      
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                    </ul>
+                    <p class="text-secondary mt-2">{{client.review}}Whether you want to get reviews on Amazon or Facebook, repeat after me, “customer reviews are under my control.” Reviews are just another element of your company.  </p>
+                    <h6 class="text-primary">- {{client.name}}Kuldeep <small class="text-muted">{{client.designation}}PQR</small></h6>
+                </div>
+            </div>            
+        
+            <div class="media customer-testi m-2">              
+                <img src="{% static 'images/course/android1.png' %}" class="avatar avatar-small mr-3 rounded shadow" alt="...">
+                <div class="media-body content p-3 shadow rounded bg-white position-relative">
+                    <ul class="list-unstyled mb-0">                      
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                    </ul>
+                    <p class="text-secondary mt-2">{{client.review}}Whether you want to get reviews on Amazon or Facebook, repeat after me, “customer reviews are under my control.” Reviews are just another element of your company.</p>
+                    <h6 class="text-primary">- {{client.name}} Shubham <small class="text-muted">{{client.designation}}ABC</small></h6>
+                </div>
+            </div>            
+            <div class="media customer-testi m-2">              
+                <img src="{% static 'images/course/cs3.gif' %}" class="avatar avatar-small mr-3 rounded shadow" alt="...">
+                <div class="media-body content p-3 shadow rounded bg-white position-relative">
+                    <ul class="list-unstyled mb-0">                      
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                        <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>                                              
+                    </ul>
+                    <p class="text-secondary mt-2">{{client.review}}Whether you want to get reviews on Amazon or Facebook, repeat after me, “customer reviews are under my control.” Reviews are just another element of your company.</p>
+                    <h6 class="text-primary">- {{client.name}} Ritika <small class="text-muted">{{client.designation}}xyz</small></h6>
+                </div>
+            </div>            
+        </div>
+        </div>
+    </div><!--end col-->
+      {% comment %} {% endfor %} {% endcomment %}
+        </div>
+        </div>
+    
+      
+</div><!--end row-->
+</div><!--end container-->
+</section><!--end section-->
+{% endblock %}

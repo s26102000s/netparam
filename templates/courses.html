@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!--Course Section-->
+<section class = "course">
+    <div class="services-title position-relative pt-7" data-bg-img="{% static 'images/bg1.jpg' %}" >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <!-- Section title -->
+                    <div class="section-title text-center">
+                        <h1 class="text-white" data-animate="fadeInUp" data-delay=".1">Internship Training Programs</h1>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-wrap bg-white position-relative pt-5 pb-5">
+        <div class="container">
+            <!-- All Courses -->
+            <div class="row">
+                {% for course in courses %}
+                <div class="card mr-3 ml-3 mb-3 col-md-2 text-center" data-animate="fadeInUp" data-delay=".1">
+                    
+                    <img src="{{ course.image.url }}" alt="..." data-no-retina>
+                    <h4>{{course.name}}</h4>
+                    <span>{{course.subtitle}}</span>                        
+                    <a class="btn btn-outline-primary text-center" href="{% url 'website:CourseInfo' course.name %}">Apply Now</a>
+                    <a class ="btn btn-outline-secondary text-center mt-3" href="{{ course.syllabus.url }}">More Info</a>
+                        
+                </div>
+                {% endfor %}                                  
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Our services -->
+
+{% endblock %}
